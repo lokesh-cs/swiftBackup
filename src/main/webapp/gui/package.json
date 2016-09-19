@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "alertifyjs": "^1.4.1",
+    "browserify": "^13.0.0",
+    "jquery": "^2.1.4",
+    "lodash": "*",
+    "react": "*",
+    "react-addons-css-transition-group": "*",
+    "reactify": "*",
+    "react-tap-event-plugin": "^1.0.0",
+    "react-dom": "*"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "browserify start.jsx > built.js -d"
+  },
+  "devDependencies": {
+    "bluebird": "^3.3.5",
+    "react-pie": "0.0.3",
+    "webpack": "^1.13.0",
+    "react-simple-pie-chart":"*",
+    "material-ui": "^0.14.4"
+  }
+}

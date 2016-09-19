@@ -1,0 +1,64 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+apply plugin: 'com.bmuschko.tomcat'
+apply plugin: 'jetty'
+httpPort=8080
+
+war {
+    archiveName = 'smartdashboard.war'
+}
+
+tomcat {
+    httpPort = 8080
+}
+
+configurations {
+    compile.extendsFrom provided
+    provided
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://m2.neo4j.org/content/repositories/releases" }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+    }
+}
+
+dependencies {
+    def tomcatVersion = '7.0.57'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+       
+    
+    compile "org.quartz-scheduler:quartz:2.2.2"
+    compile "log4j:log4j:1.2.17"
+	
+	compile 'com.fasterxml.jackson.core:jackson-core:2.6.2'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.6.2'
+    compile 'commons-net:commons-net:3.3'
+   
+    compile 'com.orientechnologies:orientdb-graphdb:2.1.16'
+	compile 'com.google.code.gson:gson:2.7'
+   
+    
+    providedCompile 'javax.servlet:javax.servlet-api:3.0.1',
+                'javax.servlet:jsp-api:2.0'    
+      
+       
+    compile group: 'commons-io', name: 'commons-io', version: '2.5' 
+    compile group: 'org.json', name: 'json', version: '20090211'
+  
+}
+
+tomcatRun.contextPath = '/smartdashboard'
+tomcatRunWar.contextPath = '/'

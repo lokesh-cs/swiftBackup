@@ -1,0 +1,1048 @@
+* {
+    font-family: 'Open Sans', Tahoma, sans-serif;;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.systemItemIndividualView {
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #eee;
+}
+
+.systemView {
+    overflow: hidden;
+    border: 1px solid #eee;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.headerViewContainer {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16%;
+}
+
+.headerLabel {
+    margin-right: 0px;
+    float: left;
+    font-size: 11px;
+    color: #aaa;
+    width: 10%;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.status {
+    width: 7%;
+}
+
+.In-Use {
+    width: 7%;
+}
+
+.Start {
+    width: 7%;
+}
+
+.Stop {
+    width: 7%;
+}
+
+.Restart {
+    width: 7%;
+}
+
+.Take-Offline {
+    width: 11%;
+}
+
+.CPU {
+    width: 7%;
+}
+
+.Memory {
+    width: 7%;
+}
+
+.Disk {
+    width: 18%;
+}
+
+.Ping {
+    width: 7%;
+    text-align: left;
+}
+
+.bigTileContainer {
+    overflow: hidden;
+}
+
+.smallTileContainer {
+    overflow: hidden;
+}
+
+.pieChartWrapper {
+
+}
+
+.customTile {
+    margin: 10px;
+    width: calc(25% - 20px);
+    float: left;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    position: relative;
+}
+
+.customTile:after {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background: #fff;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    border-radius: 50%;
+    color: #666;
+    font-weight: bold;
+    padding-top: calc(25% - 2px);
+    font-size: 12px;
+}
+
+.customBig {
+    width: calc(50% - 20px);
+}
+
+.applicationHealth:after {
+    content: 'Application Health';
+}
+
+.misc {
+    content: '';
+}
+
+.orientdb:after {
+    content: 'OrientDB';
+}
+
+.elastic:after {
+    content: 'Elastic';
+}
+
+/*.cassandra:after {
+    content: 'Cassandra';
+}*/
+
+.tomcat:after {
+    content: 'Tomcat';
+}
+
+/*.pentaho:after {
+    content: 'Pentaho';
+}*/
+
+.swift:after {
+    content: 'Swift';
+}
+
+/*.oracle:after {
+    content: 'Oracle';
+}*/
+
+.dashboardHeader {
+    height: 60px;
+    background-color: #3f3f3f;
+}
+
+.dashboardTitle {
+    font-size: 24px;
+    padding: 13px 5%;
+    color: #fafafa;
+}
+
+.dashboardBodyContainer {
+    padding: 0px 5%;
+    height: 100%;
+}
+
+.dashboardBody {
+    background-color: #eee;
+    height: calc(100% - 60px);
+}
+
+.wrapperMain {
+    height: 100%;
+    width: 130%;
+}
+
+.systemViewContainer {
+    width: calc(45% - 10px);
+    margin: 20px 20px 20px 0;
+}
+
+.transactionViewContainer, .systemViewContainer, .BackupViewContainer {
+    height: calc(100% - 40px);
+    float: left;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px -2px #aaa;
+}
+
+.systemLabel, .transactionLabel, .backupLabel {
+    height: 40px;
+    line-height: 40px;
+    color: #777;
+    padding: 0 12px;
+    font-size: 18px;
+
+}
+
+.systemItemIndividualViewChild {
+    display: inline-block;
+}
+
+.rightIconContainer {
+    float: right;
+    width: 85%;
+}
+
+.rightIconContainerChild {
+    display: inline-block;
+    height: 30px;
+    width: 10%;
+    text-align: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    float: left;
+    font-size: 12px;
+    color: #777;
+}
+
+.sCPU {
+    width: 8%;
+}
+
+.sMemory {
+    width: 8%;
+}
+
+.sDisk {
+    width: 25%;
+}
+
+.sPing {
+    width: 8%;
+}
+
+.collapseIcon {
+    height: 20px;
+    width: 20px;
+    background: url("../images/Forward-50.png") no-repeat left 50% top 50%;
+    background-size: 15px;
+    width: 5%;
+    display: none;
+}
+
+.collapseIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.expandIcon {
+    height: 20px;
+    width: 20px;
+    background: url("../images/Expand Arrow-50.png") no-repeat left 50% top 50%;
+    background-size: 15px;
+    display: none;
+}
+
+.expandIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.labelContainer {
+    cursor: context-menu;
+    color: #616161;
+    font-size: 13px;
+    width: 15%;
+    padding-left: 5px;
+}
+
+.statusIcon {
+    /*background-image: url("../images/Rectangle-50.png");*/
+    width: 10%;
+}
+
+.statusIconInner {
+    margin: 3px;
+    /*overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    height: 100%;
+    line-height: 20px;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.statusIconInner:hover {
+    /*background-color: #D6D3D3;*/
+    cursor: context-menu;
+}
+
+.thumbUpIcon {
+    background-image: url("../images/Thumb Up-30.png");
+    width: 7%;
+}
+
+.thumbUpIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.playIcon {
+    background-image: url("../images/Play-30.png");
+    width: 7%;
+}
+
+.playIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.restartIcon {
+    background-image: url("../images/Restart-30.png");
+    width: 7%;
+}
+
+.restartIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.shutDownIcon {
+    background-image: url("../images/Shutdown-30.png");
+    width: 7%;
+}
+
+.shutDownIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.exitIcon {
+    background-image: url("../images/Exit-30.png");
+    width: 7%;
+}
+
+.exitIcon:hover {
+    background-color: #D6D3D3;
+    cursor: pointer;
+}
+
+.childDomNodes .systemItemIndividualView .labelContainer {
+    padding-left: 20px;
+}
+
+.childDomNodes {
+    height: 100%;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.dispN {
+    display: none;
+}
+
+.hideChildNodes {
+    height: 0;
+}
+
+.visibilityN {
+    visibility: hidden;
+}
+
+.transactionViewContainer {
+    width: calc(30% - 10px);
+    margin: 20px 20px 20px 0;;
+}
+
+.transactionView {
+    padding: 10px;
+    overflow: auto;
+    height: calc(100% - 50px);
+}
+
+.pieWrapper {
+    overflow: hidden;
+}
+
+.pieWrapper > svg {
+    float: left;
+}
+
+.pieChartLabel {
+    font-size: small;
+    text-align: center;
+}
+
+.applicationhealth {
+}
+
+.pieInfoBodyLabel {
+    font-size: 13px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #777;
+}
+
+.pieChartInfoWrapper {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.pieInfoChild {
+    display: inline-block;
+    /*padding: 3px;*/
+}
+
+.passColorBlock {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-left: 5%;
+}
+
+.failColorBlock {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-left: 5%;
+}
+
+.inProgressColorBlock {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-left: 5%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-track:vertical {
+    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.14), inset -1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-top: 6px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.14), inset -1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-track:vertical:hover {
+    background-color: rgba(0, 0, 0, 0.035);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.14), inset -1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-track:vertical:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.10)
+}
+
+::-webkit-scrollbar-track:horizontal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.10)
+}
+
+::-webkit-scrollbar-track:vertical:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.14), inset -1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-track:horizontal:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset -1px 1px 0 rgba(0, 0, 0, 0.14), inset 1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    border-top: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 0 solid transparent
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    border-top: 5px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    /*-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 rgba(0, 0, 0, 0.07)
+    */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    /*  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25)
+    */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    /*  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35)
+    */
+}
+
+.fr-wrapper {
+    /*padding: 10px;
+      */
+    background-color: white;
+}
+
+body > .fr-toolbar {
+    z-index: 111111;
+}
+
+.fr-box div a[href="https://froala.com/wysiwyg-editor"] {
+    display: none !important;
+}
+
+::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.smallTileContainer .customTile:after {
+    font-size: 10px;
+}
+
+.customTile.selectedTile {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 9px -2px #aaa;
+    background-image: linear-gradient(100deg, #fff 49%, #fafafa 52%);
+}
+
+.infoLeftContainer {
+    float: left;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.infoLabel {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: small;
+    text-align: left;
+}
+
+.infoRightContainer {
+    overflow: hidden;
+}
+
+.applicationHealthViewContainer {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.appHealthEl {
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.pass {
+    border-color: rgba(10, 193, 10, 0.83);
+}
+
+.fail {
+    border-color: rgba(245, 35, 35, 0.83);
+}
+
+.inPrg {
+    border-color: rgba(236, 236, 27, 0.85);
+}
+
+.appHealthHeader {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    color: #777;
+    overflow: hidden;
+}
+
+.appHealthBody {
+    text-align: center;
+}
+
+.customTile:hover {
+    box-shadow: 0px 0px 9px -2px #aaa;
+    border-color: #ccc;
+}
+
+.passInfo {
+    border-bottom: 1px solid #eee;
+}
+
+.inProgressInfo {
+    border-bottom: 1px solid #eee;
+}
+
+.failInfo {
+    /*border-bottom: 1px solid #eee;*/
+}
+
+.passInfo:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.inProgressInfo:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.failInfo:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.appHealthHeaderText {
+    float: left;
+    padding: 5px 10px 0 10px;
+    width: 22%;
+}
+
+.appHealthHeaderBody {
+    width: 78%;
+}
+
+.dialogContainer {
+    overflow: scroll;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    max-height: 500px;
+}
+
+.dialogHeaderContainer {
+    overflow: hidden;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgba(63, 63, 63, 0.89);
+}
+
+.dialogHeaderLabel {
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.transactionIdHeaderLabel {
+    border-right: 1px solid #eee;
+    width: 30%;
+}
+
+.userHeaderLabel {
+    border-right: 1px solid #eee;
+    width: 14%;
+}
+
+.useCaseHeaderLabel {
+    border-right: 1px solid #eee;
+    width: 14%;
+}
+
+.startTimeHeaderLabel {
+    border-right: 1px solid #eee;
+    width: 14%;
+}
+
+.turnAroundTimeHeaderLabel {
+    border-right: 1px solid #eee;
+    width: 14%;
+}
+
+.logHeaderLabel {
+    width: 14%;
+}
+
+.transactionId {
+    width: 30%;
+    border-right: 1px solid #eee;
+}
+
+.logItemRow {
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #eee;
+}
+
+.logItemRowChild {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.user {
+    width: 14%;
+    border-right: 1px solid #eee;
+}
+
+.useCase {
+    border-right: 1px solid #eee;
+    width: 14%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.startTime {
+    width: 14%;
+    border-right: 1px solid #eee;
+}
+
+.turnAroundTime {
+    width: 14%;
+    border-right: 1px solid #eee;
+}
+
+.log {
+    width: 14%;
+}
+
+.log:hover {
+    color: #143cb3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.load {
+    align-content: center;
+    display: block;
+}
+
+.loadPrevious {
+    background: url("../images/previous.png");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    background-color: lightgrey;
+    float: left;
+}
+
+.loadPrevious:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.loadNext {
+    background: url("../images/next.png");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    height: 28px;
+    width: 28px;
+    float: right;
+    display: inline-block;
+    background-color: lightgrey;
+}
+
+.loadNext:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.noOfResults {
+    display: inline-block;
+    width: 88%;
+    text-align: center;
+
+}
+
+.searchViewContainer {
+    /*  float: right;
+  */
+}
+
+.searchBoxContainer {
+    display: flex;
+    width: auto;
+    min-width: 40px;
+}
+
+.submitButton {
+    background: url("../images/Search-100.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 3px;
+    height: 28px;
+    width: 34px;
+    float: right;
+}
+
+.clearButton {
+    margin-left: 10px;
+    align-self: baseline;
+    height: 28px;
+}
+
+.searchBox1 {
+    display: inline-block;
+    width: 200px;
+    height: 28px;
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .07);
+    box-shadow: 0px 1px 0px rgba(196, 195, 255, 0.58), 1px 2px 3px rgba(0, 0, 0, 0.34) inset, 0px 1px 2px -1px rgba(112, 129, 139, 0.72) inset;
+    border: none;
+    color: black;
+}
+
+.searchBox1::-webkit-input-placeholder {
+    color: rgb(212, 164, 192);
+}
+
+.searchBox2 {
+    display: inline-block;
+    width: 200px;
+    height: 28px;
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .07);
+    box-shadow: 0px 1px 0px rgba(196, 195, 255, 0.58), 1px 2px 3px rgba(0, 0, 0, 0.34) inset, 0px 1px 2px -1px rgba(112, 129, 139, 0.72) inset;
+    border: none;
+    color: black;
+}
+
+.searchBox2::-webkit-input-placeholder {
+    color: rgb(212, 164, 192);
+}
+
+.searchBox3 {
+    display: inline-block;
+    width: 225px;
+    height: 28px;
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .07);
+    box-shadow: 0px 1px 0px rgba(196, 195, 255, 0.58), 1px 2px 3px rgba(0, 0, 0, 0.34) inset, 0px 1px 2px -1px rgba(112, 129, 139, 0.72) inset;
+    border: none;
+    color: black;
+}
+
+.searchBox3::-webkit-input-placeholder {
+    color: rgb(212, 164, 192);
+}
+
+/*Backup CSS*/
+
+.backupButton {
+    overflow: hidden;
+    height: 30px;
+    width: 45%;
+    margin: 5px 5px 5px 5px;
+    background-color: #4CC417;
+    color: white;
+    cursor: context-menu;
+}
+
+.detailButton {
+    overflow: hidden;
+    height: 25px;
+    width: 80px;
+    position: relative;
+    float: right;
+    background-color: #1569C7;
+    color: white;
+    cursor: context-menu;
+}
+
+.restoreButton {
+    overflow: hidden;
+    height: 25px;
+    width: 80px;
+    float: right;
+    background-color: lightgray;
+    color: white;
+    cursor: context-menu;
+    pointer-events: none;
+}
+
+.restoreButton:disabled {
+
+}
+
+.backupDetailTitlebar {
+    height: 25px;
+}
+
+.BackupViewContainer {
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.backup {
+    overflow-y: hidden;
+}
+
+.BackupViewContainer {
+    width: calc(20% - 10px);
+    margin: 20px 20px 20px 0;
+}
+
+.backupDBViewChild {
+    display: inline-block;
+}
+
+.DBbackup {
+
+    color: #616161;
+    font-size: 13px;
+    padding-left: 10px;
+    border: 1px solid darkgray;
+
+}
+
+.backupDetails {
+    cursor: context-menu;
+    overflow-y: hidden;
+    line-height: 20px;
+}
+
+.BackupViewItems {
+
+    overflow-y: hidden;
+    margin: 5px 0px 10px 0px;
+    width: 1000px;
+    border-top: 1px solid lightgray;
+
+}
+
+.Name {
+    display: inline-block;
+    width: 100px;
+}
+
+.Timestamp {
+    display: inline-block;
+    margin-left: 5px;
+    width: 150px;
+}
+
+.Status {
+    display: inline-block;
+    margin-left: 5px;
+    width: 70px;
+}
+
+.Timetaken {
+    display: inline-block;
+    margin-left: 5px;
+    width: 100px;
+}
+
+.Location {
+    display: inline-block;
+    margin-left: 5px;
+    width: 500px;
+}
+
+.ResponseCode {
+    display: inline-block;
+    margin-left: 5px;
+    width: 50px;
+}
+
+.clickbar {
+    cursor: hand;
+}
+
+#spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 1234;
+    overflow: auto;
+    width: 150px;
+    height: 102px;
+
+}
+
+#overlay {
+    background: darkgray;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -30%;
+    opacity: 0.5;
+}
+
+
